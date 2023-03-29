@@ -1,5 +1,6 @@
 package com.kaereun3305.a20230303kt
 
+import android.annotation.SuppressLint
 import android.graphics.Rect
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -24,9 +25,10 @@ class MainLobby : AppCompatActivity() {
     private lateinit var movieList: RecyclerView
     private var data: MutableList<movies> = mutableListOf()
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.main_lobby)
 
         movieList = findViewById(R.id.movieList)
 

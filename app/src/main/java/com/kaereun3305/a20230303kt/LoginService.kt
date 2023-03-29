@@ -8,7 +8,7 @@ import retrofit2.http.POST
 interface LoginService {
 
     @FormUrlEncoded
-    @POST("https://9d4f-117-16-195-14.jp.ngrok.io/userlogin/")
+    @POST("https://ce17-117-16-244-19.jp.ngrok.io/userlogin/")
 
     fun requestLogin(
         @Field("userid") userid:String,

@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val regis: TextView = findViewById(R.id.register)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://90d4-117-16-244-19.jp.ngrok.io/")
+            .baseUrl("https://ce17-117-16-244-19.jp.ngrok.io/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

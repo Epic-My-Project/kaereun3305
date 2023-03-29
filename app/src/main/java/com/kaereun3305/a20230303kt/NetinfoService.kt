@@ -9,7 +9,7 @@ import retrofit2.http.POST
 
 interface NetinfoService {
     @FormUrlEncoded
-    @POST("https://9d4f-117-16-195-14.jp.ngrok.io/usersignup/")
+    @POST("https://ce17-117-16-244-19.jp.ngrok.io/usersignup/")
 
     fun requestNetInfo(
         @Field("netflixid") netid:String,

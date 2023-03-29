@@ -27,7 +27,7 @@ class NetflixInfo :AppCompatActivity(){
         val goback: ImageView = findViewById(R.id.goback)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://9d4f-117-16-195-14.jp.ngrok.io/")
+            .baseUrl("https://ce17-117-16-244-19.jp.ngrok.io/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

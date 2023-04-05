@@ -66,7 +66,7 @@
             android:id="@+id/netflixid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="ID*"
+            android:hint="Netflix ID*"
             android:textSize="16sp"
             android:textColor="@android:color/darker_gray"
             android:textStyle="bold"/>
@@ -86,8 +86,9 @@
             android:id="@+id/netflixpw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password*"
+            android:hint="Netflix Password*"
             android:textSize="16sp"
+            android:inputType="textPassword"
             android:textColor="@android:color/darker_gray"
             android:textStyle="bold"/>
 

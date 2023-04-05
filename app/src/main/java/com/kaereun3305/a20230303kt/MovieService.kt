@@ -4,7 +4,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface MovieService {
-    @GET("https://ce17-117-16-244-19.jp.ngrok.io/movie-recommand/")
+    @GET("https://a4aa-117-16-195-25.jp.ngrok.io/movie-recommand/")
     fun getMovies(): Call<ServerResponse>
 }
 

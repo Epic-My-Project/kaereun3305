@@ -27,7 +27,7 @@ class NetflixInfo :AppCompatActivity(){
         val goback: ImageView = findViewById(R.id.goback)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://ce17-117-16-244-19.jp.ngrok.io/")
+            .baseUrl("https://a4aa-117-16-195-25.jp.ngrok.io/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -40,17 +40,17 @@ class NetflixInfo :AppCompatActivity(){
         }
 
         infobutton.setOnClickListener {
-            var netflixID = netID.text.toString()
-            var netflixPW = netPw.text.toString()
+            var netid = netID.text.toString()
+            var netpw = netPw.text.toString()
 
-            if(netflixID.equals("")){
+            if(netid.equals("")){
                 Toast.makeText(this@NetflixInfo, "넷플릭스 아이디를 입력해 주세요.", Toast.LENGTH_SHORT).show()
             }
-            if(netflixPW.equals("")){
+            if(netpw.equals("")){
                 Toast.makeText(this@NetflixInfo, "넷플릭스 비밀번호를 입력해 주세요.", Toast.LENGTH_SHORT).show()
             }
 
-            NetinfoService.requestNetInfo(netflixID, netflixPW).enqueue(object:
+            NetinfoService.requestNetInfo(netid, netpw).enqueue(object:
                 Callback<netinfo> {
                 override fun onResponse(call: Call<netinfo>, response: Response<netinfo>) {
 

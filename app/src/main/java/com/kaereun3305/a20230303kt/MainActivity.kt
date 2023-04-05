@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val regis: TextView = findViewById(R.id.register)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://ce17-117-16-244-19.jp.ngrok.io/")
+            .baseUrl("https://a4aa-117-16-195-25.jp.ngrok.io/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
                 val intent = Intent(this@MainActivity, MainLobby::class.java)
                 startActivity(intent)
-                overridePendingTransition(R.anim.slide_down_enter, R.anim.slide_up_exit)
+                overridePendingTransition(R.anim.slide_up_enter, R.anim.slide_up_exit)
                 }
             })
         }

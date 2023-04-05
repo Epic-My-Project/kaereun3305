@@ -7,6 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
+        android:layout_marginTop="5dp"
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -15,7 +16,7 @@
 
         <EditText
             android:id="@+id/search_edit_text"
-            android:layout_width="330dp"
+            android:layout_width="335dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginBottom="5dp"
@@ -24,10 +25,11 @@
             android:padding="10dp" />
 
         <ImageView
+            android:layout_marginLeft="5dp"
             android:id="@+id/search_button"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:src="@drawable/ic_search" />
+            android:src="@drawable/ic_search"/>
 
     </LinearLayout>
 

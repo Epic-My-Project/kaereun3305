@@ -34,11 +34,11 @@ class RegistActivity :AppCompatActivity(){
 
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://ce17-117-16-244-19.jp.ngrok.io/")
+            .baseUrl("https://a4aa-117-16-195-25.jp.ngrok.io/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        var loginService = retrofit.create(RegisterService::class.java)
+        var RegisterService = retrofit.create(RegisterService::class.java)
 
         goback.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
@@ -77,7 +77,7 @@ class RegistActivity :AppCompatActivity(){
             }
 
 
-            loginService.requestLogin(username, password, firstname, lastname, email).enqueue(object:
+            RegisterService.requestRegister(username, password, firstname, lastname, email).enqueue(object:
                 Callback<Register> {
                 override fun onFailure(call: Call<Register>, t: Throwable) {
                     //통신 실패후 실행 코드
@@ -87,13 +87,11 @@ class RegistActivity :AppCompatActivity(){
                     dialog.show()
                 }
                 override fun onResponse(call: Call<Register>, response: Response<Register>) {
-                    // 통신 성공. 응답값 받아옴
-                    var login = response.body() //code, msg
+                    // 통신 성공. 다음 페이지로
 
-                    var dialog = AlertDialog.Builder(this@RegistActivity)
-                    dialog.setTitle("error")
-                    dialog.setMessage(login?.msg + "(code:" + login?.code + ")")
-                    dialog.show()
+                    val intent1 = Intent(this@RegistActivity, NetflixInfo::class.java)
+                    startActivity(intent1)
+                    overridePendingTransition(R.anim.slide_down_enter, R.anim.slide_down_exit)
                 }
             })
         }

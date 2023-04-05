@@ -8,9 +8,9 @@ import retrofit2.http.POST
 interface RegisterService {
 
     @FormUrlEncoded
-    @POST("https://ce17-117-16-244-19.jp.ngrok.io/usersignup/")
+    @POST("https://a4aa-117-16-195-25.jp.ngrok.io/usersignup/")
 
-    fun requestLogin(
+    fun requestRegister(
         @Field("username") userid:String,
         @Field("password") password:String,
         @Field("first_name") firstname:String,

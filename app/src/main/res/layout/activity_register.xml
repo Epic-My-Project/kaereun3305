@@ -71,6 +71,7 @@
             android:layout_height="wrap_content"
             android:hint="Password*"
             android:textSize="16sp"
+            android:inputType="textPassword"
             android:textColor="@android:color/darker_gray"
             android:textStyle="bold"/>
 
@@ -89,6 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password Confirm*"
+            android:inputType="textPassword"
             android:textSize="16sp"
             android:textColor="@android:color/darker_gray"
             android:textStyle="bold"/>
@@ -153,6 +155,7 @@
         android:layout_gravity="center"
         android:backgroundTint="#1dde7d"
         android:layout_marginTop="10dp"
-        android:text="회원가입"
+        android:text="넷플릭스 정보 제공 절차로 넘어갑니다."
+        android:textSize="12dp"
         android:textColor="@android:color/black"/>
 </LinearLayout>
